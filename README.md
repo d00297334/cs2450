@@ -1,3 +1,2 @@
-# Group Project
-
-We have not yet decided on our group project
+# Grades AF
+Grade calculator (overall or semester GPA, & individual class grades calculator)
