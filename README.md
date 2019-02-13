@@ -1,5 +1,5 @@
 # Grades AF
-- Group project for CS 2450
+Group project for CS 2450
 
 ## Members
 - Edwin
@@ -9,9 +9,9 @@
 
 ### Project Description
 We will be making a web app that will calculate your grades including:
-- `Overall GPA`
-- `Semester GPA`
-- `Individual Classes`
+`Overall GPA`
+`Semester GPA`
+`Individual Classes`
 
 #### Possible Architecture Options
 - Python Server
