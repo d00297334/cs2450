@@ -8,9 +8,9 @@ Group project for CS 2450
 - Victoria
 
 ### Project Description
-We will be making a web app that will calculate your grades including:
-`Overall GPA`
-`Semester GPA`
+We will be making a web app that will calculate your grades including:<br>
+`Overall GPA`<br>
+`Semester GPA`<br>
 `Individual Classes`
 
 #### Possible Architecture Options
