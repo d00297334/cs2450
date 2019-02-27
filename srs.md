@@ -9,7 +9,6 @@ date created: 2/25/2018
 
 - Name, Date, Reason For Changes, Version
 - 02/25/2018 Initial Additions, low level planning.
-- 02/27/2018 Met as a group and worked on functional requirements. 
 
 ## 1. Introduction
 
@@ -40,10 +39,10 @@ This project's main purpose is to be an accessible online web app where students
 ### 1.5 References
 
 
-Source: [VueJS Documentation] (https://vuejs.org/)<br>
-Source: [ExpressJS Documentation] (https://expressjs.com/)<br>
-Source: [NodeJS Documentation] (https://nodejs.org/en/docs/)<br>
-Source: [Vuetify] (https://vuetifyjs.com/en/getting-started/quick-start)<br>
+Source: [VueJS Documentation] (https://vuejs.org/)
+Source: [ExpressJS Documentation] (https://expressjs.com/)
+Source: [NodeJS Documentation] (https://nodejs.org/en/docs/)
+Source: [Vuetify] (https://vuetifyjs.com/en/getting-started/quick-start)
 
 ## 2. Overall Description
 
@@ -100,6 +99,9 @@ Depending on how different schools, districts, or institutions calculate their g
 
 ### 3.1 User Interfaces
 
+Because we are going to place it on a website, users can click on input boxes to add infomation about their classes. The 1st box will be the name/number of the class. The second box with be for the grade, and then last box will be for the number of credits.
+
+
 <Describe the logical characteristics of each interface between the software
 product and the users. This may include sample screen images, any GUI standards
 or product family style guides that are to be followed, screen layout
@@ -140,23 +142,18 @@ and synchronization mechanisms.>
 
 ## 4. System Features
 
-###### System Features/Use Cases:
-1. A user wants to calculate a GPA from scratch.
-2. A user wants to add letter grades to a current GPA.
-3. A user wants to see what letter grades it takes to boost a GPA.
-4. A user wants to calculate what letter grade they will recieve based on percentages. 
-5. A user wants to calculate a letter grade from weights and points. 
+<This template illustrates organizing the functional requirements for the
+product by system features, the major services provided by the product. You may
+prefer to organize this section by use case, mode of operation, user class,
+object class, functional hierarchy, or combinations of these, whatever makes the
+most logical sense for your product.>
 
-###### Requirements:
-1. Research different ways of calculating and evaluating grades
-    - weighted
-    -  non-weighted
-2. Algorithms to match the math required for the calculations. 
+<You may modify the structure of this secture according to the software process
+you are using for this project. For example, if you are using agile (or some of
+its derivations) and you need to format the features in terms of user stories,
+you may replace the format below with your own adaptation for each user story.>
 
-###### Undetermined System Requirements:
-If this project requires a database, we will need to develop a schema to classify our data. 
-
-### 4.1 User Interface that is Interactive and Responsive
+### 4.1 System Feature 1
 
 <Don’t really say "4.1 System Feature 1" for the heading here. Rewrite the
 heading as the feature name in just a few words.>
@@ -195,47 +192,26 @@ meaningful tag of some kind.>
 ## 5. Other Nonfunctional Requirements
 
 ### 5.1 Performance Requirements
-
-<If there are performance requirements for the product under various
-circumstances, state them here and explain their rationale, to help the
-developers understand the intent and make suitable design choices. Specify the
-timing relationships for real time systems. Make such requirements as specific
-as possible. You may need to state performance requirements for individual
-functional requirements or features.>
+The main requirements are for the software to calculate the users input and give them back a gpa. It also needs to be able to calculate many different grades, from 1 to 10. 
+Also, users can add already calculated gpas. Because these calculations are simple, time shouldn't be a problem. We will add a time out feature just in case. 
 
 ### 5.2 Safety Requirements
-
-<Specify those requirements that are concerned with possible loss, damage, or
-harm that could result from the use of the product. Define any safeguards or
-actions that must be taken, as well as actions that must be prevented. Refer to
-any external policies or regulations that state safety issues that affect the
-product’s design or use. Define any safety certifications that must be
-satisfied.>
+There is no real need for safety because there is no data base, no user login, and no saved information. 
 
 ### 5.3 Security Requirements
 
-<Specify any requirements regarding security or privacy issues surrounding use
-of the product or protection of the data used or created by the product. Define
-any user identity authentication requirements. Refer to any external policies or
-regulations containing security issues that affect the product. Define any
-security or privacy certifications that must be satisfied.>
+The only security requirements is that people cannot copy our code and use it as their own. Because there is no database we will not need to much security. 
 
 ### 5.4 Software Quality Attributes
-
-<Specify any additional quality characteristics for the product that will be
-important to either the customers or the developers. Some to consider are:
-adaptability, availability, correctness, flexibility, interoperability,
-maintainability, portability, reliability, reusability, robustness, testability,
-and usability. Write these to be specific, quantitative, and verifiable when
-possible. At the least, clarify the relative preferences for various attributes,
-such as ease of use over ease of learning.>
+adaptability, to be able to adapt to many different gpas and lines of information.
+availability, to be able to be used on the internet. 
+correctness, the math must be right in order to have the calculation right.
+reliability, as said above, reliable calculation and reliable availably. 
+reusability, can be reused as many times as needed, add a restart button.
+usability, easy user interface and clear instruction. 
 
 ### 5.5 Business Rules
-
-<List any operating principles about the product, such as which individuals or
-roles can perform which functions under specific circumstances. These are not
-functional requirements in themselves, but they may imply certain functional
-requirements to enforce the rules.>
+n/a because we are not selling it.
 
 ## 6. Other Requirements
 
