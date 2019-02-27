@@ -9,6 +9,7 @@ date created: 2/25/2018
 
 - Name, Date, Reason For Changes, Version
 - 02/25/2018 Initial Additions, low level planning.
+- 02/27/2018 Met as a group and worked on functional requirements. 
 
 ## 1. Introduction
 
@@ -139,18 +140,23 @@ and synchronization mechanisms.>
 
 ## 4. System Features
 
-<This template illustrates organizing the functional requirements for the
-product by system features, the major services provided by the product. You may
-prefer to organize this section by use case, mode of operation, user class,
-object class, functional hierarchy, or combinations of these, whatever makes the
-most logical sense for your product.>
+###### System Features/Use Cases:
+1. A user wants to calculate a GPA from scratch.
+2. A user wants to add letter grades to a current GPA.
+3. A user wants to see what letter grades it takes to boost a GPA.
+4. A user wants to calculate what letter grade they will recieve based on percentages. 
+5. A user wants to calculate a letter grade from weights and points. 
 
-<You may modify the structure of this secture according to the software process
-you are using for this project. For example, if you are using agile (or some of
-its derivations) and you need to format the features in terms of user stories,
-you may replace the format below with your own adaptation for each user story.>
+###### Requirements:
+1. Research different ways of calculating and evaluating grades
+    - weighted
+    -  non-weighted
+2. Algorithms to match the math required for the calculations. 
 
-### 4.1 System Feature 1
+###### Undetermined System Requirements:
+If this project requires a database, we will need to develop a schema to classify our data. 
+
+### 4.1 User Interface that is Interactive and Responsive
 
 <Don’t really say "4.1 System Feature 1" for the heading here. Rewrite the
 heading as the feature name in just a few words.>
