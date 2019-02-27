@@ -239,3 +239,5 @@ class diagrams, state-transition diagrams, or entity-relationship diagrams.>
 
 <Collect a numbered list of the TBD (to be determined) references that remain in
 the SRS so they can be tracked to closure.>
+
+- 4.2 Other System Features
