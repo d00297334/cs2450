@@ -214,7 +214,7 @@ reusability, can be reused as many times as needed, add a restart button.
 usability, easy user interface and clear instruction. 
 
 ### 5.5 Business Rules
-n/a because we are not selling it.
+N/A, because we are not selling it.
 
 ## 6. Other Requirements
 
