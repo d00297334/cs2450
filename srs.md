@@ -155,43 +155,42 @@ and synchronization mechanisms.>
     -  non-weighted
 2. Algorithms to match the math required for the calculations. 
 
+
 ###### Undetermined System Requirements:
 If this project requires a database, we will need to develop a schema to classify our data. 
 
+
 ### 4.1 User Interface that is Interactive and Responsive
 
-The interface will be hosted online to allow for easy access. The 
+The interface will be hosted online to allow for easy access. The user should find it easy to navigate, and the visual design should appeal to many types of people. It should work quick and use 'watchers' (or the equivalent in another language) to compute values without extra work from the user. 
 
-### 4.1.1 Description and Priority
-
-<Provide a short description of the feature and indicate whether it is of High,
-Medium, or Low priority. You could also include specific priority component
-ratings, such as benefit, penalty, cost, and risk (each rated on a relative
-scale from a low of 1 to a high of 9).>
 
 ### 4.1.2 Stimulus/Response Sequences
 
-<List the sequences of user actions and system responses that stimulate the
-behavior defined for this feature. These will correspond to the dialog elements
-associated with use cases.>
+
+####### Note: The user is not required to log in or authenticate to use the software.
+
+- User chooses the type of calculation they want to do. (most likely by using a button, maybe a different page/tab)
+- User enters in the data they have. 
+    - Note: This may be letter grades, percentages, or a cumulative GPA.
+- Can add more inputs or remove inputs.
+- Client will use watchers/computed values to average the grades without the user needing to hit a trigger/event.
 
 ### 4.1.3 Functional Requirements
 
-<Itemize the detailed functional requirements associated with this feature.
-These are the software capabilities that must be present in order for the user
-to carry out the services provided by the feature, or to execute the use case.
-Include how the product should respond to anticipated error conditions or
-invalid inputs. Requirements should be concise, complete, unambiguous,
-verifiable, and necessary. Use "TBD" as a placeholder to indicate when necessary
-information is not yet available.>
+###### Summary of Requirements
+- REQ: Allow user to enter all kinds of data, but limit the unwanted data, possibly using regular expressions. Calculate accurately based on if they choose weighted or unweighted. Fast calculations and friendly interface.
 
-<Each requirement should be uniquely identified with a sequence number or a
-meaningful tag of some kind.>
+###### Possible Validation Errors:
+- User enters letters not A-F
+- User uses symbols other than +/-
+- User enters multiple letters or numbers in one input
+- User enters invalid GPA
+- User enters invalid decimal place of GPA
 
-- REQ-1:
-- REQ-2:
 
 ### 4.2 System Feature 2 (and so on)
+- TBD
 
 ## 5. Other Nonfunctional Requirements
 
