@@ -206,7 +206,7 @@ There is no real need for safety because there is no data base, no user login, a
 The only security requirements is that people cannot copy our code and use it as their own. Because there is no database we will not need to much security. 
 
 ### 5.4 Software Quality Attributes
-adaptability, to be able to adapt to many different gpas and lines of information.
+Adaptability, to be able to adapt to many different gpas and lines of information.
 availability, to be able to be used on the internet. 
 correctness, the math must be right in order to have the calculation right.
 reliability, as said above, reliable calculation and reliable availably. 
