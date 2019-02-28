@@ -168,7 +168,7 @@ The interface will be hosted online to allow for easy access. The user should fi
 ### 4.1.2 Stimulus/Response Sequences
 
 
-####### Note: The user is not required to log in or authenticate to use the software.
+###### Note: The user is not required to log in or authenticate to use the software.
 
 - User chooses the type of calculation they want to do. (most likely by using a button, maybe a different page/tab)
 - User enters in the data they have. 
