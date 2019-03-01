@@ -217,11 +217,11 @@ usability, easy user interface and clear instruction.
 N/A, because we are not selling it.
 
 ## 6. Other Requirements
+No Database Requirements as information will not be stored. A disclaimer will 
+be placed stating that these are not official transcripts or grades provided by 
+any institution but instead purely based on user's input. The calculations will
+be displayed in English(USA).
 
-<Define any other requirements not covered elsewhere in the SRS. This might
-include database requirements, internationalization requirements, legal
-requirements, reuse objectives for the project, and so on. Add any new sections
-that are pertinent to the project.>
 
 ## Appendix A: Glossary
 
