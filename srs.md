@@ -123,12 +123,10 @@ Connection through Client Server model. Using MVC. Database schema to use string
 
 ### 3.4 Communications Interfaces
 
-<Describe the requirements associated with any communications functions required
-by this product, including e-mail, web browser, network server communications
-protocols, electronic forms, and so on. Define any pertinent message formatting.
-Identify any communication standards that will be used, such as FTP or HTTP.
-Specify any communication security or encryption issues, data transfer rates,
-and synchronization mechanisms.>
+All communication established over HTTP. Sent as url encoded data or JSON data. Will not be needing encryption at this time, due to no sensitive information being requested or receieved. Transfer speeds at free tier level of Heroku PaaS. * [ https://www.heroku.com/pricing ] <br> 
+* [ https://devcenter.heroku.com/articles/limits ]
+
+
 
 ## 4. System Features
 
