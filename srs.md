@@ -40,9 +40,9 @@ This project's main purpose is to be an accessible online web app where students
 ### 1.5 References
 
 
-Source: [VueJS Documentation] (https://vuejs.org/)
-Source: [ExpressJS Documentation] (https://expressjs.com/)
-Source: [NodeJS Documentation] (https://nodejs.org/en/docs/)
+Source: [VueJS Documentation] (https://vuejs.org/)<br>
+Source: [ExpressJS Documentation] (https://expressjs.com/)<br>
+Source: [NodeJS Documentation] (https://nodejs.org/en/docs/)<br>
 Source: [Vuetify] (https://vuetifyjs.com/en/getting-started/quick-start)
 
 ## 2. Overall Description
