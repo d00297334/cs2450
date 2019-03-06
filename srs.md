@@ -10,6 +10,7 @@ date created: 2/25/2018
 - Name, Date, Reason For Changes, Version
 - 02/25/2018 Initial Additions, low level planning.
 - 02/27/2018 Met as a group, worked on functional requirements. 
+- 03/06/2018 Added onto interface requirements.
 ## 1. Introduction
 
 ### 1.1 Purpose
@@ -99,37 +100,26 @@ Depending on how different schools, districts, or institutions calculate their g
 
 ### 3.1 User Interfaces
 
-Because we are going to place it on a website, users can click on input boxes to add infomation about their classes. The 1st box will be the name/number of the class. The second box with be for the grade, and then last box will be for the number of credits.
+Because we are going to place it on a website, users can click on input boxes to add infomation about their classes. The 1st box will be the name/number of the class. The second box with be for the grade, and then last box will be for the number of credits. Likely will be designed using Material Design. At minimum 1 grade entry, at maximum 10 grade entries(TBD). An enter key shortcut for user ease. 
 
 
-<Describe the logical characteristics of each interface between the software
-product and the users. This may include sample screen images, any GUI standards
-or product family style guides that are to be followed, screen layout
-constraints, standard buttons and functions (e.g., help) that will appear on
-every screen, keyboard shortcuts, error message display standards, and so on.
-Define the software components for which a user interface is needed. Details of
-the user interface design should be documented in a separate user interface
-specification.>
 
 ### 3.2 Hardware Interfaces
 
-<Describe the logical and physical characteristics of each interface between the
-software product and the hardware components of the system. This may include the
-supported device types, the nature of the data and control interactions between
-the software and the hardware, and communication protocols to be used.>
+No hardware interface, this will be hosted online using a PaaS. We will not be controlling any parts of this aspect. However, it will be supported on any device that can establish an internet connection because on the mobile friendly design. All communication done over HTTP. HTTPS?
+
 
 ### 3.3 Software Interfaces
 
-<Describe the connections between this product and other specific software
-components (name and version), including databases, operating systems, tools,
-libraries, and integrated commercial components. Identify the data items or
-messages coming into the system and going out and describe the purpose of each.
-Describe the services needed and the nature of communications. Refer to
-documents that describe detailed application programming interface protocols.
-Identify data that will be shared across software components. If the data
-sharing mechanism must be implemented in a specific way (for example, use of a
-global data area in a multitasking operating system), specify this as an
-implementation constraint.>
+- VueJS 2.6.8
+- ExpressJS 4.16.4
+- Vuetify 2.0.0
+- NodeJS 10.15.3
+- MongoDB 4.0.0
+
+Connection through Client Server model. Using MVC. Database schema to use strings and integers. 
+
+
 
 ### 3.4 Communications Interfaces
 
@@ -241,3 +231,7 @@ class diagrams, state-transition diagrams, or entity-relationship diagrams.>
 the SRS so they can be tracked to closure.>
 
 - 4.2 Other System Features
+- 3.1 User Interface Requirements
+    * do we want to limit the max entries?
+- 3.2 Hardware Interface Requirements
+    * currently no plans to use HTTPS. Is there a need? Maybe in the future. 
