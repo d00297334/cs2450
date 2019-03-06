@@ -123,7 +123,8 @@ Connection through Client Server model. Using MVC. Database schema to use string
 
 ### 3.4 Communications Interfaces
 
-All communication established over HTTP. Sent as url encoded data or JSON data. Will not be needing encryption at this time, due to no sensitive information being requested or receieved. Transfer speeds at free tier level of Heroku PaaS. * [ https://www.heroku.com/pricing ] <br> 
+All communication established over HTTP. Sent as url encoded data or JSON data. Will not be needing encryption at this time, due to no sensitive information being requested or receieved. Transfer speeds at free tier level of Heroku PaaS. 
+* [ https://www.heroku.com/pricing ] <br> 
 * [ https://devcenter.heroku.com/articles/limits ]
 
 
