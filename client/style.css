@@ -44,6 +44,32 @@ textarea:focus, input:focus{
     
 }
 
-.center {
-    margin:0 auto;
+.addButtonDiv {
+    margin:30px;
+    text-align: center;
+    color: white;
+    
+}
+
+.addButtonDiv button {
+    background-color:#f6d55c;
+    padding:10px 15px;
+    border-radius: 5px;
+    border: 0px solid white;
+}
+
+.addButtonDiv button:hover {
+    cursor:pointer;
+}
+
+.inline {
+    display:inline-block;
+}
+
+p {
+    margin: 0px;
+}
+
+.select {
+    margin: 50px;
 }
