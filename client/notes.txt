@@ -1,0 +1,14 @@
+yellow:
+#ffc300
+
+orange:
+#ff5733
+
+red:
+#c70039
+
+maroon:
+#900c3e
+
+purple:
+#571845
