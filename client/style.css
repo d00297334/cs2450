@@ -13,6 +13,8 @@ font-family: 'Erica One', cursive;
 font-family: 'Chango', cursive;
 */
 
+[v-cloak] {display: none}
+
 
 .wrapper {
     width:80%;
@@ -36,9 +38,10 @@ body {
 
 .header {
     text-align:center;
+    font-size: 3em;
 }
 
-.semesterContainer {
+.unweightedContainer {
     margin:0 auto;
     width:80%;
     background-color:white;
@@ -87,15 +90,17 @@ textarea:focus, input:focus{
     display:inline-block;
 }
 
-p {
-    margin: 0px;
+.topbutton p {
+    margin: 10px 50px;
+    padding:10px 100px;
+    
 }
 
 .select {
     margin: 50px;
 }
 
-.topbotton1 {
+.topbutton1 {
     text-align: center;
     background-color: #900c3e;
     color: white;
@@ -104,19 +109,19 @@ p {
     box-shadow: 0 3px #999;
 }
 
-.topbotton1:active {
+.topbutton1:active {
     
     box-shadow: 0 2px #666;
     transform: translateY(4px);
 }
 
-.topbotton2:active {
+.topbutton2:active {
     
     box-shadow: 0 2px #666;
     transform: translateY(4px);
 }
 
-.topbotton3:active {
+.topbutton3:active {
     box-shadow: 0 2px #666;
     transform: translateY(4px);
 }
@@ -126,7 +131,7 @@ p {
     transform: translateY(4px);
 }
 
-.topbotton2 {
+.topbutton2 {
     text-align: center;
     background-color: #ff5733;
     color: white;
@@ -134,7 +139,7 @@ p {
     border-radius: 5px;
     box-shadow: 0 3px #999;
 }
-.topbotton3 {
+.topbutton3 {
     text-align: center;
     background-color: #ffc300;
     color: white;
@@ -155,19 +160,9 @@ button:hover {
     margin: 5px;
 }
 
-.gradetext{
-    display: none;
 
-}
-.lettertext{
-    display: none;
-}
-.gpatext{
-    display: none;
-}
-
-.topbotton1 :hover .topbotton1 {
-    background-color:black;
+.topbutton1:hover + .gradetext {
+    display: block;
 }
 
 button:focus {
@@ -199,4 +194,14 @@ select:focus {
 
 .center {
     text-align:center;
+}
+
+.removeButton {
+    height:15px;
+    width:15px;
+    padding-left:15px;
+}
+
+.removeButton:hover {
+    cursor: pointer;
 }
