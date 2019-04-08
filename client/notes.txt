@@ -27,7 +27,7 @@ git merge 'your branch name'
 git push origin master
 
 How to get changes from master:
-git checkout branchname      
+git checkout master      
 git fetch origin        
 git merge origin/master
 
