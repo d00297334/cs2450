@@ -49,11 +49,18 @@ let getLetterPointsTotal = function (letterArray) {
 //***** END OF TEST 1 *****//
 
 
+
+
+//***** TEST 2 *****//
 //calculate average
 let calculateGPA = function(letterArray) {
     var total = getLetterPointsTotal(letterArray);
     return Number(total / letterArray.length).toFixed(2);
 }
+//***** END OF TEST 2 *****//
+
+
+
 
 //get letter grade 0 - 100 percent
 let getLetterGrade = function(pointsEarned, totalPoints) {
