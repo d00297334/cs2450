@@ -7,6 +7,7 @@ const app = new Vue ({
         name:'',
         grade:'',
         credits:'',
+        showGPA: false,
         rows : [
             {
                 name:this.name1,
@@ -67,6 +68,9 @@ const app = new Vue ({
         grade4:'',
         grade5:'',
         grade6:'',
+        red: false,
+        yellow: false,
+        green: false,
 
         gpa:'',
     },
@@ -105,8 +109,45 @@ const app = new Vue ({
             // return this.gpa;
             return Number(this.credits1) + Number(this.credits2) + Number(this.credits3) + Number(this.credits4) + Number(this.credits5) + Number(this.credits6);
         },
+        addGrades() {
+            return Number(this.grade1) + Number(this.grade2) + Number(this.grade3) + Number(this.grade4) + Number(this.grade5) + Number(this.grade6);
+        },
         addCredits() {
             return Number(this.credits1) + Number(this.credits2) + Number(this.credits3) + Number(this.credits4) + Number(this.credits5) + Number(this.credits6);
+        },
+        calculateGrades() {
+            if (this.grade1 && this.grade2 && this.grade3 && this.grade4 && this.grade5 && this.grade6) {
+                this.showGPA = true;
+            }
+            this.gpa =  (Number(this.grade1) 
+            + Number(this.grade2)
+            + Number(this.grade3)
+            + Number(this.grade4)
+            + Number(this.grade5)
+            + Number(this.grade6)
+            ) /6;
+            if ( this.gpa <= 4.0 && this.gpa >= 3.5) {
+                this.green = true;
+                this.red = false;
+                this.yellow = false;
+                return this.gpa;
+            }
+            if (this.gpa <= 3.49 && this.gpa >= 2.5) {
+                this.red = false;
+                this.green = false;
+                this.yellow = true;
+                return this.gpa;
+            }
+            if (this.gpa <= 2.49 && this.gpa >= 0.0) {
+                this.red = true;
+                this.green = false;
+                this.yellow = false;
+                return this.gpa;
+            }
+            console.log('red: ', this.red, ' green: ', this.green, ' yellow: ', this.yellow);
+
+            return this.gpa;
+           
         }
     },
     methods: {
