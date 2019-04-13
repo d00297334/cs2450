@@ -61,7 +61,7 @@ let calculateGPA = function(letterArray) {
 
 
 
-
+//***** TEST 3 *****//
 //get letter grade 0 - 100 percent
 let getLetterGrade = function(pointsEarned, totalPoints) {
     var grade = pointsEarned / totalPoints;
@@ -109,6 +109,10 @@ let getLetterGrade = function(pointsEarned, totalPoints) {
     console.log('letter grade ', letter);
     return letter;
 }
+//***** END OF TEST 3 *****//
+
+
+
 
 const app = new Vue ({
     el: '#app',
