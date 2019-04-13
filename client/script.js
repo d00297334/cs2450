@@ -1,3 +1,119 @@
+//TESTING
+
+
+//***** TEST 1 *****//
+//takes in letter array and then returns values for each letter
+let getLetterPointsTotal = function (letterArray) {
+    let total = 0.0;
+    for (let i=0; i < letterArray.length; i++) {
+        if (letterArray[i] == 'A' || letterArray[i] == 'a') {
+            total += 4.0
+        }
+        if (letterArray[i] == 'A-' || letterArray[i] == 'a-') {
+            total += 3.7
+        }
+
+        if (letterArray[i] == 'B+' || letterArray[i] == 'b+') {
+            total += 3.3
+        }
+        if (letterArray[i] == 'B' || letterArray[i] == 'b') {
+            total += 3.0
+        }
+        if (letterArray[i] == 'B-' || letterArray[i] == 'b-') {
+            total += 2.7
+        }
+        if (letterArray[i] == 'C+' || letterArray[i] == 'c+') {
+            total += 2.3
+        }
+        if (letterArray[i] == 'C' || letterArray[i] == 'c') {
+            total += 2.0
+        }
+        if (letterArray[i] == 'C-' || letterArray[i] == 'c-') {
+            total += 1.7
+        }
+        if (letterArray[i] == 'D+' || letterArray[i] == 'd+') {
+            total += 1.3
+        }
+        if (letterArray[i] == 'D' || letterArray[i] == 'd') {
+            total += 1.0
+        }
+        if (letterArray[i] == 'F' || letterArray[i] == 'f') {
+            total += 0.0
+        }
+        
+    }
+    console.log('total ', total);
+    return total;
+    
+}
+//***** END OF TEST 1 *****//
+
+
+
+
+//***** TEST 2 *****//
+//calculate average
+let calculateGPA = function(letterArray) {
+    var total = getLetterPointsTotal(letterArray);
+    return Number(total / letterArray.length).toFixed(2);
+}
+//***** END OF TEST 2 *****//
+
+
+
+//***** TEST 3 *****//
+//get letter grade 0 - 100 percent
+let getLetterGrade = function(pointsEarned, totalPoints) {
+    var grade = pointsEarned / totalPoints;
+    grade *= 100;
+    Math.floor(grade);
+    let letter = 'problem';
+    console.log('grade ', grade);
+    if (grade >= 94) {
+        letter = 'A';
+    }
+    if (grade >= 90 && grade <= 93) {
+        letter = 'A-';
+    }
+    if (grade >= 87  && grade <= 89) {
+        letter = 'B+';
+    }
+    if (grade >= 84 && grade <= 86) {
+        letter = 'B';
+    }
+    if (grade >= 80 && grade <= 83) {
+        letter = 'B-';
+    }
+    if (grade >= 77 && grade <= 79) {
+        letter = 'C+';
+    }
+    if (grade >= 74 && grade <= 76) {
+        letter = 'C';
+    }
+    if (grade >= 70 && grade <= 73) {
+        letter = 'C-';
+    }
+    if (grade >= 67 && grade <= 69) {
+        letter = 'D+';
+    }
+    if (grade >= 64 && grade <= 66) {
+        letter = 'D';
+    }
+    if (grade >= 60 && grade <= 63) {
+        letter = 'D-';
+    }
+    if (grade >= 0 && grade <= 59) {
+        letter = 'F';
+    }
+    //should override problem unless there is a problem
+    console.log('letter grade ', letter);
+    return letter;
+}
+//***** END OF TEST 3 *****//
+
+
+
+
 const app = new Vue ({
     el: '#app',
     props: {
@@ -125,7 +241,19 @@ const app = new Vue ({
             + Number(this.grade4)
             + Number(this.grade5)
             + Number(this.grade6)
-            ) /6;
+            ) / 6;
+            // let total = 0;
+            // let count = 0
+            // for (let i = 0; i < this.rows.length; i++) {
+            //     console.log('rows i ', this.rows[i]);
+            //     if (this.rows[i] !== "") {
+            //         total += this.rows[i].grade;
+            //         count++;
+            //     }
+            // }
+            // this.gpa = total / count;
+
+
             if ( this.gpa <= 4.0 && this.gpa >= 3.5) {
                 this.green = true;
                 this.red = false;
@@ -181,7 +309,7 @@ const app = new Vue ({
 
     },
     created: function() {
-        console.log('page sloaded/created');
+        console.log('page loaded/created');
     }
 });
 
