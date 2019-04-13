@@ -1,5 +1,7 @@
 //TESTING
 
+
+
 //takes in letter array and then returns values for each letter
 let getLetterPointsTotal = function (letterArray) {
     let total = 0.0;
@@ -45,10 +47,59 @@ let getLetterPointsTotal = function (letterArray) {
     
 }
 
+
 //calculate average
 let calculateGPA = function(letterArray) {
     var total = getLetterPointsTotal(letterArray);
     return Number(total / letterArray.length).toFixed(2);
+}
+
+//get letter grade 0 - 100 percent
+let getLetterGrade = function(pointsEarned, totalPoints) {
+    var grade = pointsEarned / totalPoints;
+    grade *= 100;
+    Math.floor(grade);
+    let letter = 'problem';
+    console.log('grade ', grade);
+    if (grade >= 94) {
+        letter = 'A';
+    }
+    if (grade >= 90 && grade <= 93) {
+        letter = 'A-';
+    }
+    if (grade >= 87  && grade <= 89) {
+        letter = 'B+';
+    }
+    if (grade >= 84 && grade <= 86) {
+        letter = 'B';
+    }
+    if (grade >= 80 && grade <= 83) {
+        letter = 'B-';
+    }
+    if (grade >= 77 && grade <= 79) {
+        letter = 'C+';
+    }
+    if (grade >= 74 && grade <= 76) {
+        letter = 'C';
+    }
+    if (grade >= 70 && grade <= 73) {
+        letter = 'C-';
+    }
+    if (grade >= 67 && grade <= 69) {
+        letter = 'D+';
+    }
+    if (grade >= 64 && grade <= 66) {
+        letter = 'D';
+    }
+    if (grade >= 60 && grade <= 63) {
+        letter = 'D-';
+    }
+    if (grade >= 0 && grade <= 59) {
+        letter = 'F';
+    }
+    //should override problem unless there is a problem
+    console.log('letter grade ', letter);
+    return letter;
 }
 
 const app = new Vue ({
