@@ -1,7 +1,7 @@
 //TESTING
 
 
-
+//***** TEST 1 *****//
 //takes in letter array and then returns values for each letter
 let getLetterPointsTotal = function (letterArray) {
     let total = 0.0;
@@ -46,6 +46,7 @@ let getLetterPointsTotal = function (letterArray) {
     return total;
     
 }
+//***** END OF TEST 1 *****//
 
 
 //calculate average
