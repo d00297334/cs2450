@@ -151,11 +151,6 @@ const app = new Vue ({
         }
     },
     methods: {
-
-        
-        
-        
-        
         buttonOneClicked: function() {
             this.showUnweightedText = true;
             this.showUnweightedContainer = true;
